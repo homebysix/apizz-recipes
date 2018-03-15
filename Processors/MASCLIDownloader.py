@@ -63,7 +63,7 @@ class MASCLIDownloader(Processor):
         appstoreextractor_script = self.env['appstoreextractor_script']
         force = self.env['force']
         mas_app_id = self.env['mas_app_id']
-        mas_cli_exec = subprocess.call(["which", "mas"])
+        mas_cli_exec = os.popen('which mas').read()
                 
         """Verify mas-cli is installed"""
         if not os.path.exists(mas_cli_exec):
