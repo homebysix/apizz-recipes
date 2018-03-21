@@ -51,7 +51,7 @@
 # install embedded packages
 for PKG in /Applications/Xcode.app/Contents/Resources/Packages/*.pkg; do
     /usr/sbin/installer -pkg "$PKG" -target /
-done
+done</string>
 	    <key>unattended_install</key>
             <true/>
         </dict>
